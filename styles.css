@@ -1,0 +1,52 @@
+/* External CSS */
+
+/* body is a CSS Selector */
+/* {} idicates a CSS Declaration */
+body {
+  /* property:value; is a CSS Rule */
+  background-color: #fdfdfd;
+  color: #0d0d0d;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.headerLogo {
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.hamburger {
+  height: 26px;
+  width: 26px;
+}
+
+.hidden {
+  display: none;
+}
+
+.navigationList {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* MAIN */
+section {
+  height: 100vh;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+}
