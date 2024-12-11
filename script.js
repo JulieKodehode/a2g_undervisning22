@@ -37,3 +37,24 @@ timeout2();
 
 //
 //
+
+const myCatFacts = ["Cats are the best", "Cats are just small lions"];
+
+console.log(myCatFacts[0]);
+
+for (let index = 0; index < myCatFacts.length; index++) {
+    console.log(myCatFacts[index]);
+};
+
+//
+//
+
+async function getApiData () {
+    const response = await fetch("https://catfact.ninja/facts");
+    console.log(response);
+
+    const data = await response.json();
+    console.log(data.data[3].fact);
+}
+
+getApiData();
