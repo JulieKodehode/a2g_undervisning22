@@ -21,19 +21,19 @@ In this section, we are using the `setTimeout()` function to execute code after 
 In this is an example of how to use `setTimeout` for scheduling a task asynchronously.
 */
 
-function timeout () {
+function timeout1 () {
     // Log this message immediately when the function is called.
     console.log("Noe skal skje"); // Logs the message to the console immediately.
 
     // Set a timeout to execute a function after 10,000 milliseconds (10 seconds).
     setTimeout(function () {
         // This will be executed after 10 seconds.
-        console.log("Noe har skjedd"); // Logs the message after 10 seconds.
+        console.log("Noe har skjedd");
     }, 10000); // Delay of 10,000 milliseconds (10 seconds).
 }
 
 // Call the timeout function to execute the code inside it.
-timeout();
+timeout1();
 
 
 /* 
@@ -49,8 +49,9 @@ function delay(ms) {
     });
 };
 
-async function timeout () {
-    console.log("Noe kommer til å skje"); // Logs the message immediately when the function starts.
+async function timeout2 () {
+    // Logs the message immediately when the function starts.
+    console.log("Noe kommer til å skje");
     
     // Wait for the `delay()` function to resolve after 5 seconds.
     await delay(5000);
@@ -60,4 +61,4 @@ async function timeout () {
 }
 
 // Call the async `timeout` function.
-timeout();
+timeout2();
